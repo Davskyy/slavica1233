@@ -1,0 +1,140 @@
+/* Resetowanie marginesów i paddingów */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url('bahnschrift.ttf') format('truetype');
+}
+
+body {
+    background: url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    font-family: 'Bahnschrift', Arial, sans-serif;
+}
+
+header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #d4af37;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-left: 20px;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+}
+
+main {
+    padding: 20px;
+}
+
+#wyposazenie {
+    text-align: center;
+    margin-left: 160px;
+}
+
+.header-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+.filters {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.filters button {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Bahnschrift', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.filters button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.inventory-grid {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.grid-container {
+    position: relative;
+    width: 600px; /* Stały rozmiar siatki */
+}
+
+.grid-image {
+    width: 100%; /* Zapewnia, że obrazek siatki będzie miał stały rozmiar */
+}
+
+.item {
+    position: absolute;
+    cursor: grab;
+    width: 50px; /* Domyślny rozmiar przedmiotu */
+    height: 50px; /* Domyślny rozmiar przedmiotu */
+}
+
+#item3 {
+    height: 100px; /* Specjalny rozmiar dla 'sword.png', który ma dwie kratki */
+}
+
+.inventory-info {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.inventory-info p {
+    margin: 5px 0;
+}
+
+.inventory-info .inventory-text {
+    color: #c18c3f;
+    text-shadow: 0 0 5px rgba(193, 140, 63, 0.5);
+    font-family: 'Bahnschrift', Arial, sans-serif;
+}
